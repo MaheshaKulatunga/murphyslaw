@@ -1,18 +1,18 @@
 .jumbotron {
-  background: green;
   color: white;
   padding-bottom: 80px; }
   .jumbotron .btn-primary {
     background: #845ac7;
     border-color: #845ac7; }
     .jumbotron .btn-primary:hover {
-      background: #7646c1; }
+      }
   .jumbotron p {
     color: #d9ccee;
     max-width: 75%;
     margin: 1em auto 2em; }
   .navbar + .jumbotron {
-    margin-top: -20px; }
+
+    }
   .jumbotron .lang-logo {
     display: block;
     background: #B01302;
@@ -25,9 +25,41 @@
     .jumbotron .lang-logo img {
       max-width: 100%; }
 
+      .section-1 {
+        background: url("../imgs/stock-photo-green-vegetables-and-dark-leafy-food-background-as-a-healthy-eating-concept-of-fresh-garden-produce-154023704.jpg") no-repeat fixed center;
+        height: 100vh !important;
+      }
+      .section-1 .container {
+        padding-top: 20vh;
+      }
+
+      .navbar-inverse .navbar-nav>li>a {
+        color: white;
+      }
+
+      .section-2 {
+        background:white;
+        height: 100vh !important;
+
+      }
+
+      .navbar {
+        margin-bottom: -50px !important;
+        background: transparent !important;
+        border: none;
+      }
 
 @media (min-width: 768px){
   .navbar {
     border-radius: 0px !important;
+    padding: 0px 10%;
   }
+
+  .contactus-div {
+    margin-top: 50px;
+  }
+
+  .section-1 {
+    padding: 70px 0;
+}
 }
