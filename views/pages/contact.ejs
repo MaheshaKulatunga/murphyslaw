@@ -48,7 +48,16 @@
 
 </div>
   <div class="form-section col-lg-6 col-md-6 col-sm-6 col-xs-12 " style="display:block">
-    <a href='/sendmail'> send email </a>
+    <form id="details-form" class="form-group" method="post" action="/send">
+        <input type="text" class="form-control" name="inquiry[firstname]">
+        <input type="text" class="form-control" name="inquiry[surname]">
+        <input type="text" class="form-control" name="inquiry[designation]">
+        <input type="text" class="form-control" name="inquiry[company]">
+        <input type="text" class="form-control" name="inquiry[email]">
+        <input type="text" class="form-control" name="inquiry[number]">
+        <input type="text" class="form-control" name="inquiry[message]">
+        <input type="submit" value="Submit">
+    </form>
   </div>
 </div>
 

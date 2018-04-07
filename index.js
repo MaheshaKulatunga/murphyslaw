@@ -2,14 +2,29 @@ const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
+const bodyParser = require("body-parser");
+
+/** bodyParser.urlencoded(options)
+ * Parses the text as URL encoded data (which is how browsers tend to send form data from regular forms set to POST)
+ * and exposes the resulting object (containing the keys and values) on req.body
+ */
+
+
+/**bodyParser.json(options)
+ * Parses the text as JSON and exposes the resulting object on req.body.
+ */
+
+
 express()
   .use(express.static(path.join(__dirname, 'public')))
+  .use(bodyParser.urlencoded({extended: true}))
+  .use(bodyParser.json())
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   //Routes
   .get('/', (req, res) => res.render('pages/index'))
   .get('/contact', (req, res) => res.render('pages/contact'))
-  .get('/sendmail',(req,res) => sendEmail())
+  .post('/send',(req,res) => sendEmail(req, res))
 
   //Listener
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
@@ -31,18 +46,32 @@ express()
            }
       });
 
-      // setup email data with unicode symbols
-      let mailOptions = {
-          from: '"Fred Foo 👻" <foo@example.com>', // sender address
-          to: 'smart.farmslk@gmail.com', // list of receivers
-          subject: 'Hello ✔', // Subject line
-          text: 'Hello world?', // plain text body
-          html: '<b>Hello world?</b>' // html body
-      };
 
-      sendEmail = function() {
-        debugger
+
+      sendEmail = function(req, res) {
+
+        console.log(req.body.inquiry)
         // send mail with defined transport object
+
+        var createEmail = 'User: ' + req.body.inquiry.designation + ' ' + req.body.inquiry.firstname + ' ' + req.body.inquiry.surname +
+        ' Company: ' + req.body.inquiry.company + ' Email: ' + req.body.inquiry.email + ' Number: ' + req.body.inquiry.number + ' ' +
+        'Inquiry' + req.body.inquiry.message;
+
+        var createEmailHTML = '<p> User: ' + req.body.inquiry.designation + ' ' + req.body.inquiry.firstname + ' ' + req.body.inquiry.surname +
+        ' <br/><br/>Company: ' + req.body.inquiry.company + ' <br/><br/>Email: ' + req.body.inquiry.email + ' <br/><br/>Number: ' + req.body.inquiry.number +
+        ' <br/><br/>Inquiry' + req.body.inquiry.message + '</p>';
+
+        console.log(createEmail)
+
+        // setup email data with unicode symbols
+        let mailOptions = {
+            from: '"Smart Farms" <no-reply@smartfarmslk.com>', // sender address
+            to: 'smart.farmslk@gmail.com', // list of receivers
+            subject: 'An inquiry has been posted on Smartfarms.com', // Subject line
+            text: createEmail, // plain text body
+            html: createEmailHTML // html body
+        };
+
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
                 return console.log(error);
@@ -54,6 +83,8 @@ express()
             // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
             // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
         });
+
+        res.render('pages/contact')
 
       }
 
