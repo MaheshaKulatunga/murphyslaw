@@ -50,18 +50,16 @@ express()
 
       sendEmail = function(req, res) {
 
-        console.log(req.body.inquiry)
-        // send mail with defined transport object
-
+        //create email
         var createEmail = 'User: ' + req.body.inquiry.designation + ' ' + req.body.inquiry.firstname + ' ' + req.body.inquiry.surname +
         ' Company: ' + req.body.inquiry.company + ' Email: ' + req.body.inquiry.email + ' Number: ' + req.body.inquiry.number + ' ' +
-        'Inquiry' + req.body.inquiry.message;
+        'Inquiry: ' + req.body.inquiry.message;
 
         var createEmailHTML = '<p> User: ' + req.body.inquiry.designation + ' ' + req.body.inquiry.firstname + ' ' + req.body.inquiry.surname +
-        ' <br/><br/>Company: ' + req.body.inquiry.company + ' <br/><br/>Email: ' + req.body.inquiry.email + ' <br/><br/>Number: ' + req.body.inquiry.number +
-        ' <br/><br/>Inquiry' + req.body.inquiry.message + '</p>';
-
-        console.log(createEmail)
+        ' <br/><br/>Company: ' + req.body.inquiry.company +
+        ' <br/><br/>Email: ' + req.body.inquiry.email +
+        ' <br/><br/>Number: ' + req.body.inquiry.number +
+        ' <br/><br/>Inquiry: ' + req.body.inquiry.message + '</p>';
 
         // setup email data with unicode symbols
         let mailOptions = {
@@ -72,20 +70,16 @@ express()
             html: createEmailHTML // html body
         };
 
+        // send mail with defined transport object
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
                 return console.log(error);
             }
             console.log('Message sent: %s', info.messageId);
-            // Preview only available when sending through an Ethereal account
-            console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+            //Redirect to success page
+            res.render('pages/contact')
 
-            // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-            // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
         });
-
-        res.render('pages/contact')
-
       }
 
   });

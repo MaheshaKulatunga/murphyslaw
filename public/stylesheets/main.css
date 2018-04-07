@@ -37,11 +37,82 @@ body, footer, head {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 70vh;
+  height: auto;
 }
 
 .form-section {
-  height:70vh !important;
+  height:auto !important;
+  overflow:scroll;
+}
+
+.form-input {
+  padding-bottom:5vh;
+}
+
+.form-input, .form-input input, .form-input textarea {
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.form-input input, .form-input textarea {
+  border-bottom: 1px solid white
+
+}
+
+.form-control:focus, .form-button:focus {
+    border: none;
+    border-bottom: 1px solid yellow;
+
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:white !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:white !important;
+   opacity:1 !important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:white !important;
+   opacity:1 !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:white !important;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:white !important;
+}
+
+
+.form-control {
+  border: none;
+  border-radius: 0px;
+}
+
+#details-form {
+  padding-top:6vh;
+}
+
+.form-button {
+  padding-top:3%;
+  padding-bottom:3%;
+  padding-right:15%;
+  padding-left:15%;
+  color:white;
+
+
+}
+
+.form-input-button {
+  padding-bottom: 0px;
+}
+
+.details-form {
+  margin-bottom: 0px;
 }
 
 .nav>li>a {
