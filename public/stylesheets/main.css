@@ -42,7 +42,7 @@ body, footer, head {
 
 .form-section {
   height:auto !important;
-  overflow:scroll;
+  overflow:hidden;
 }
 
 .form-input {
@@ -62,7 +62,7 @@ body, footer, head {
 .form-control:focus, .form-button:focus {
     border: none;
     border-bottom: 1px solid yellow;
-
+    color:yellow;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
