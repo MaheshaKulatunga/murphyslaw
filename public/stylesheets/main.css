@@ -49,8 +49,31 @@ body, footer, head {
   padding-bottom:5vh;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: lightgrey;
+  -webkit-box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 .form-input, .form-input input, .form-input textarea {
   font-size: 18px;
+  color: lightgrey;
   background-color: transparent;
 }
 
@@ -59,13 +82,22 @@ body, footer, head {
 
 }
 
-.form-control:focus, .form-button:focus {
+.form-control:focus {
     border: none;
-    border-bottom: 1px solid yellow;
     color:yellow;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+    border-bottom: 1px solid yellow;
+    border-top: 0px;
+
+
+}
+
+.form-button:focus, .form-button:hover  {
+  border: 2px solid yellow;
+  background: yellow;
+  color: black;
 }
 
 
@@ -91,6 +123,7 @@ body, footer, head {
 .form-control {
   border: none;
   border-radius: 0px;
+      box-shadow: none;
 }
 
 #details-form {
@@ -103,7 +136,10 @@ body, footer, head {
   padding-right:15%;
   padding-left:15%;
   color:white;
-
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid yellow;
 
 }
 
@@ -298,6 +334,11 @@ body, footer, head {
 }
 
 @media(max-width:767px){
+
+  .form-button {
+    width:100%;
+  }
+
   .container-fluid {
     background: #333;
   }
@@ -323,6 +364,12 @@ body, footer, head {
 }
 
 @media (min-width: 768px){
+
+  .form-button {
+    width: 150px;
+    height: 50px;
+  }
+
   .jumbotron h1 {
       font-size: 106px;
   }
