@@ -23,6 +23,7 @@ express()
   .set('view engine', 'ejs')
   //Routes
   .get('/', (req, res) => res.render('pages/index'))
+  .get('/company', (req, res) => res.render('pages/company'))
   .get('/contact', (req, res) => res.render('pages/contact'))
   .post('/send',(req,res) => sendEmail(req, res))
 

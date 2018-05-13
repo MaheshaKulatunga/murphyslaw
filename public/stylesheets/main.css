@@ -133,8 +133,7 @@ input::-webkit-inner-spin-button {
 .form-button {
   padding-top:3%;
   padding-bottom:3%;
-  padding-right:15%;
-  padding-left:15%;
+
   color:white;
   border-radius: 5px;
   font-size: 18px;
@@ -211,14 +210,26 @@ input::-webkit-inner-spin-button {
         height: 100vh !important;
       }
 
+      .contact-section-1, .company-section-1 {
+
+        height: 70vh !important;
+        margin-bottom: 0vh;
+      }
+
+      .company-section-1 {
+        background: url("../imgs/bruno-scramgnon-bulb-idea-315658.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
       .contact-section-1 {
         background: url("../imgs/agriculture-ball-shaped-cooking-5808.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 70vh !important;
-        margin-bottom: 0vh;
       }
 
       .contact-details h4 {
@@ -231,11 +242,133 @@ input::-webkit-inner-spin-button {
 
       }
 
+      .company-section-2 {
+        padding: 5% 10%;
+
+      }
+
+      .company-section-2, .company-section-3, .company-section-4, .company-section-5, .company-section-6 {
+        height: 90%;
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .company-section-3 h1, .company-section-4 h1, .company-section-6 h1 {
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+        padding: 0px 10%;
+      }
+
+      .company-section-3 {
+        background: url("../imgs/animal-brown-canine-304699.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+      }
+
+      .company-section-4 {
+        background: url("../imgs/black-and-white-close-up-dark-620251.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+        text-align: right;
+      }
+
+      .company-section-6 {
+        background: url("../imgs/architecture-banana-leaves-botanical-175256.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+      }
+
+      .company-section-5 {
+        padding: 5% 10% 2.5% 10%;
+      }
+
+      .graph-toggle {
+        padding: 0px 10%;
+      }
+
+      .graph-toggle-wrpr {
+        text-align: left;
+        padding: 10px 10px 10px 15px;
+      }
+
+      .graph-button, .map-button {
+        display: inline;
+        cursor: pointer;
+        width: 300px !important;
+        padding: 10px;
+      }
+
+      .graph-button {
+        background: white;
+
+      }
+
+      .map-button {
+        background: black;
+
+      }
+
+      .graph-button a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .map-button a {
+        color: white;
+        text-decoration: none;
+
+      }
+
+      .img-container {
+        height: 100vh;
+      }
+
+      .img-container img {
+        height: 100vh;
+        width: auto;
+        float: unset;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .company-section-4 span, .company-section-3 span, .company-section-6 span {
+        background: black;
+        line-height: 1.5em;
+      }
+
+      .tree-section-company  h1 {
+        text-align: center;
+      }
+
+      .tree-section-company-2 {
+      }
+
+      .text-section-company-2 {
+        text-align: center;
+      }
+
+      .leaf-icon {
+        font-size: 99px;
+      }
+
       .section-1 .main-banner {
         padding-top: 20vh;
       }
 
-      .contact-section-1 .main-banner {
+      .contact-section-1 .main-banner, .company-section-1 .main-banner {
         text-align: left;
         padding-top: 20vh;
         padding-left: 10%;
@@ -271,7 +404,7 @@ input::-webkit-inner-spin-button {
 
 
 .footer-basic-centered{
-	background-color: #292c2f;
+	background-color: black;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -335,12 +468,16 @@ input::-webkit-inner-spin-button {
 
 @media(max-width:767px){
 
+  .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: black;
+  }
+
   .form-button {
     width:100%;
   }
 
   .container-fluid {
-    background: #333;
+    background: black;
   }
 
   .nav>li>a {
