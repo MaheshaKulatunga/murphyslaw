@@ -8,16 +8,57 @@
 
 <% include ../partials/nav.ejs %>
 
-<div class="jumbotron company-section-1 text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div id="bg1" class="jumbotron company-section-1 text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="main-banner col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-    <h1>ABOUT US</h1>
+    <h1>FARMING THE FUTURE</h1>
   </div>
 </div>
-<div class="company-section-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
+<div id="bg2" class="company-section-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="company-section-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+      <h1>Smart Farms is an initiative spawned by the necessity for change.</h1>
+
+  </div>
+
+</div>
+
+<div id="bg3" class="company-section-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h1><span> The nation's needs for affordable food commodities have not been met.</span></h1>
+</div>
+
+<div id="bg4" class="company-section-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h1><span>This directly correlates to the country's undernourished and starving percentile.</span></h1>
+</div>
+
+<div id="bg5" class="company-section-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="text-section-company-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h1> <span>As of 2018, Sri Lanka is ranked 84th, with a GHI score of 25.5. on the Global Hunger Index.</span></h1>
+    <p> <span>Sri Lanka’s has the lowest reductions in hunger since 2000, only second to the Central African Republic. </span> </p>
+    <div class="arrow bounce">
+      <a id="map-link" href="#map">
+        <font>See data</font><br/>
+        <font class="glyphicon glyphicon-menu-down"></font>
+      </a>
+    </div>
+  </div>
+
+</div>
+<!--<div class="graph-toggle col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="graph-toggle-wrpr col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <p class="map-button "><a>Map</a></p>
+    <p class="graph-button"><a>Graph</a></p>
+  </div>
+</div>-->
+
+
+<div id="bg2" class="company-section-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="text-section-company col-lg-8 col-md-8 col-sm-8 col-xs-12">
-    <h1>Smart Farms is an initiative spawned by the necessity for change.</h1>
-    <p> We aim to provide Sri Lanka, with the tools and expertise to achieve a harmonious symbiosis between ecology and horticulture,
+    <h1><span> We at Smart Farms aim to lead the development of
+      infrastructure purposefully provisioned to address these exigencies. </span></h1>
+    <p> We aim to provide Sri Lanka with the tools and expertise to achieve a harmonious symbiosis between ecology and horticulture,
       utilizing the seamless integration of technology to advance Sri Lanka’s growing need for sustainability conscious agricultural practices.</p>
   </div>
   <div class="tree-section-company col-lg-4 col-md-4 col-sm-4 col-xs-6 hidden-xs">
@@ -26,39 +67,13 @@
   </div>
 
 </div>
-
-<div class="company-section-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <h1><span> The nation's needs for affordable food commodities have not been met.</span></h1>
-</div>
-
-<div class="company-section-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <h1><span>This directly correlates to the country's undernourished and starving percentile.</span></h1>
-</div>
-
-<div class="company-section-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <div class="text-section-company-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <h1> As of 2018, Sri Lanka is ranked 84th, with a GHI score of 25.5. on the Global Hunger Index.</h1>
-    <p> Sri Lanka’s has the lowest reductions in hunger since 2000, only second to the Central African Republic.</p>
-  </div>
-</div>
-<div class="graph-toggle col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <div class="graph-toggle-wrpr col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <p class="map-button "><a>Map</a></p>
-    <p class="graph-button"><a>Graph</a></p>
-  </div>
-
-</div>
 <div class="map-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <a id="map"></a>
   <iframe allowfullscreen="" frameborder="0" height="800" src="http://www.globalhungerindex.org/map.html" width="100%"></iframe>
 </div>
 <div hidden class="img-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <img class="img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12" src="../imgs/hunger-graph.png">
 </div>
-<div class="company-section-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <h1><span> We at Smart Farms aim to lead the development of
-    infrastructure purposefully provisioned to address these exigencies. </span></h1>
-</div>
-
 <style>
 .map-container {
   height: 0;margin-bottom: -2vw;padding-bottom: 56.25%;position: relative;width: 100%;
@@ -74,7 +89,7 @@
   var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/";
   if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })();
 
-
+/*
   $('.map-button').click(function() {
     console.log('ok')
     $('.map-container').show();
@@ -99,6 +114,14 @@
 
 
   });
+*/
+  $("#map-link").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#map").offset().top
+    }, 1000);
+  });
+
+
 
 </script>
 

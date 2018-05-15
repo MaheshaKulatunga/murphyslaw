@@ -152,6 +152,10 @@ input::-webkit-inner-spin-button {
 
 .nav>li>a {
   padding-left: 0px !important;
+  font-size:20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
 }
 
 .navbar {
@@ -187,7 +191,6 @@ input::-webkit-inner-spin-button {
     max-width: 75%;
     margin: 1em auto 2em; }
   .navbar + .jumbotron {
-
     }
   .jumbotron .lang-logo {
     display: block;
@@ -216,7 +219,7 @@ input::-webkit-inner-spin-button {
         margin-bottom: 0vh;
       }
 
-      .company-section-1 {
+      .contact-section-1 {
         background: url("../imgs/bruno-scramgnon-bulb-idea-315658.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -224,7 +227,7 @@ input::-webkit-inner-spin-button {
         background-size: cover;
       }
 
-      .contact-section-1 {
+      .company-section-1 {
         background: url("../imgs/agriculture-ball-shaped-cooking-5808.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -255,24 +258,28 @@ input::-webkit-inner-spin-button {
         justify-content: center;
       }
 
-      .company-section-3 h1, .company-section-4 h1, .company-section-6 h1 {
+      .company-section-3 h1, .company-section-4 h1, .company-section-5 h1 {
         font-size: 48px;
         font-weight: bold;
         color: white;
         padding: 0px 10%;
       }
 
-      .company-section-3 {
-        background: url("../imgs/animal-brown-canine-304699.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100vh;
+      .company-section-5 p {
+        color: white;
+        text-align: left;
+        padding: 0px 10%;
+      }
+
+      .company-section-5 font, .company-section-5 a, .company-section-5 a:hover, .arrow {
+        color: gold;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
       }
 
       .company-section-4 {
-        background: url("../imgs/black-and-white-close-up-dark-620251.jpg") no-repeat center center fixed;
+        background: url("../imgs/animal-brown-canine-304699.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -281,7 +288,16 @@ input::-webkit-inner-spin-button {
         text-align: right;
       }
 
-      .company-section-6 {
+      .company-section-3 {
+        background: url("../imgs/black-and-white-close-up-dark-620251.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+      }
+
+      .company-section-5 {
         background: url("../imgs/architecture-banana-leaves-botanical-175256.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -344,7 +360,7 @@ input::-webkit-inner-spin-button {
         margin: 0 auto;
       }
 
-      .company-section-4 span, .company-section-3 span, .company-section-6 span {
+      .company-section-4 span, .company-section-3 span, .company-section-5 span {
         background: black;
         line-height: 1.5em;
       }
@@ -397,7 +413,7 @@ input::-webkit-inner-spin-button {
       }
 
       .navbar {
-        margin-bottom: -50px !important;
+        margin-bottom: 0px !important;
         background: transparent !important;
         border: none;
       }
@@ -438,6 +454,35 @@ input::-webkit-inner-spin-button {
 	display:inline-block;
 	text-decoration: none;
 	color: inherit;
+}
+.arrow {
+  padding-top: 10px !important;
+
+}
+
+@bg: #2d2d37; // Dark blue
+@primary: #fd6b21; // Orange
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -519,6 +564,10 @@ input::-webkit-inner-spin-button {
   .navbar {
     border-radius: 0px !important;
     padding: 0px 10%;
+    background-csolor: rgb(47, 193, 152) !important;
+    position:fixed;
+    width:100%;
+
   }
 
 
