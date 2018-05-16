@@ -84,19 +84,25 @@ input::-webkit-inner-spin-button {
 
 .form-control:focus {
     border: none;
-    color:yellow;
+    color:gold;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid gold;
     border-top: 0px;
 
 
 }
 
+.git-button {
+  font-size: 14px !important;
+  padding: 10px !important;
+  cursor: pointer;
+}
+
 .form-button:focus, .form-button:hover  {
-  border: 2px solid yellow;
-  background: yellow;
+  border: 2px solid gold;
+  background: gold;
   color: black;
 }
 
@@ -138,7 +144,7 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   font-size: 18px;
   background-color: transparent;
-  border: 2px solid yellow;
+  border: 2px solid gold;
 
 }
 
@@ -150,12 +156,59 @@ input::-webkit-inner-spin-button {
   margin-bottom: 0px;
 }
 
-.nav>li>a {
+.nav>li>a, .git-input-button {
   padding-left: 0px !important;
   font-size:20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  padding: 0px 0px;
+  margin-right: 15px;
 
+}
+
+.git-input-button {
+    margin-top: 25px;
+    margin-top: 25px;
+    float: right;
+}
+
+.graph-heading {
+  position: absolute;
+  top: 471%;
+  left: 80%;
+  color: white;
+  z-index: 99;
+}
+
+.graph-heading span {
+  font-weight: bold !important;
+
+}
+
+
+.git-button:hover, .git-button:focus {
+  text-decoration: none;
+}
+
+.nav>li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: gold;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav>li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .navbar {
@@ -192,6 +245,12 @@ input::-webkit-inner-spin-button {
     margin: 1em auto 2em; }
   .navbar + .jumbotron {
     }
+
+    .navbar-nav>li>a:hover {
+      /*color: rgb(47, 193, 152) !important;*/
+
+    }
+
   .jumbotron .lang-logo {
     display: block;
     background: #B01302;
@@ -239,6 +298,10 @@ input::-webkit-inner-spin-button {
         font-weight: bold;
       }
 
+      .contact-icons {
+
+      }
+
       .contact-section-2 {
         background:white;
         padding-top: 8vh;
@@ -247,6 +310,11 @@ input::-webkit-inner-spin-button {
 
       .company-section-2 {
         padding: 5% 10%;
+
+      }
+
+      .company-section-2 h1, .company-section- h1 {
+        color: rgb(47, 193, 152) !important;
 
       }
 
@@ -272,7 +340,7 @@ input::-webkit-inner-spin-button {
       }
 
       .company-section-5 font, .company-section-5 a, .company-section-5 a:hover, .arrow {
-        color: gold;
+        color: rgb(47, 193, 152);
         cursor: pointer;
         text-align: center;
         text-decoration: none;
@@ -360,7 +428,7 @@ input::-webkit-inner-spin-button {
         margin: 0 auto;
       }
 
-      .company-section-4 span, .company-section-3 span, .company-section-5 span {
+      .company-section-4 span, .company-section-3 span, .company-section-5 span, .graph-heading span {
         background: black;
         line-height: 1.5em;
       }
@@ -420,7 +488,7 @@ input::-webkit-inner-spin-button {
 
 
 .footer-basic-centered{
-	background-color: black;
+  background-color: rgb(47, 193, 152) !important;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -437,7 +505,7 @@ input::-webkit-inner-spin-button {
 }
 
 .footer-basic-centered .footer-company-name{
-	color:  #8f9296;
+color: lightcyan;
 	font-size: 14px;
 	margin: 0;
 }
@@ -512,17 +580,34 @@ input::-webkit-inner-spin-button {
 }
 
 @media(max-width:767px){
+  .company-section-3 h1, .company-section-4 h1, .company-section-5 h1 {
+    font-size: 32px;
+  }
+
+  .navbar-brand>img {
+    width: 50px !important;
+  }
+
+  .navbar-brand {
+    margin-left: 10px;
+    margin-top: -2px;
+  }
+
 
   .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: black;
+    background-color: rgb(47, 193, 152) !important;;
   }
+
+  .navbar-inverse .navbar-toggle, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border-color: rgb(47, 193, 152) !important;
+}
 
   .form-button {
     width:100%;
   }
 
   .container-fluid {
-    background: black;
+    background: rgb(47, 193, 152) !important;
   }
 
   .nav>li>a {
@@ -564,8 +649,8 @@ input::-webkit-inner-spin-button {
   .navbar {
     border-radius: 0px !important;
     padding: 0px 10%;
-    background-csolor: rgb(47, 193, 152) !important;
-    position:fixed;
+    background-color: rgb(47, 193, 152) !important;
+    positlion:fixed;
     width:100%;
 
   }
