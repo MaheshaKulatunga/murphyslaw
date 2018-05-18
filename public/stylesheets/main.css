@@ -15,6 +15,10 @@ body, footer, head {
   font-size: 40px;
 }
 
+.jumbotron {
+    padding: 0px 0;
+}
+
 .contact-link {
   margin-bottom: 0px;
   color: grey;
@@ -333,7 +337,7 @@ input::-webkit-inner-spin-button {
         padding: 0px 10%;
       }
 
-      .company-section-5 p {
+      .company-section-5 h4 {
         color: white;
         text-align: left;
         padding: 0px 10%;
@@ -632,6 +636,7 @@ color: lightcyan;
 
 @media (min-width: 768px){
 
+
   .form-button {
     width: 150px;
     height: 50px;
@@ -649,7 +654,6 @@ color: lightcyan;
   .navbar {
     border-radius: 0px !important;
     padding: 0px 10%;
-    background-color: rgb(47, 193, 152) !important;
     positlion:fixed;
     width:100%;
 
@@ -658,6 +662,6 @@ color: lightcyan;
 
 
   .section-1 {
-    padding: 70px 0;
+    padding: 0px 0;
 }
 }
