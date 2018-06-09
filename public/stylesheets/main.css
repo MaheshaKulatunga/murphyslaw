@@ -423,6 +423,11 @@ input::-webkit-inner-spin-button {
         height: 100vh;
       }
 
+      .img-container-2 {
+        padding: 5% 10%;
+            background: #f2f2f2;
+      }
+
       .img-container img {
         height: 100vh;
         width: auto;
