@@ -230,7 +230,9 @@ input::-webkit-inner-spin-button {
 
 }
 
-
+.hom-sec-1 {
+  text-align: left !important;
+}
 
 .container {
   padding-left: 0px;
@@ -468,14 +470,66 @@ input::-webkit-inner-spin-button {
 
       }
 
+      .index-icon {
+        width: 80px;
 
+      }
+
+      .index-block-big-text {
+        font-size: 42px;
+        color: rgb(47, 193, 152) !important;
+
+      }
+
+      .index-block-heading {
+        font-size: 30px;
+      }
+
+      .index-block-text {
+        font-size: 16px;
+      }
+
+      .index-block {
+        padding: 25px;
+      }
       .navbar-inverse .navbar-nav>li>a {
         color: white;
       }
 
       .section-2 {
         background:white;
-        height: 100vh !important;
+        height: auto;
+        padding: 50px 50px 0px 50px;
+        display: inline-block;
+
+      }
+
+        .index-img img {
+          height: 500px;
+        }
+
+        .index-sec4-text {
+              padding-top: 75px;
+        }
+
+        .section-4-index, .index-img, .index-img img {
+          padding-right: 0px !important;
+        }
+
+        .heavy { font: bold 16px sans-serif; }
+        .heavy-bg { font: bold 30px sans-serif;fill:lightgrey; }
+        .sus {fill: grey;}
+        .ren {fill: rgb(47, 193, 152) !important;}
+        .sys {fill: gold;}
+
+      .section-2-container {
+        padding-left: 0px;
+        height: 100%;
+        display: inline-block;
+      }
+
+      .index-bold {
+        font-weight: bold;
 
       }
 
@@ -503,6 +557,7 @@ input::-webkit-inner-spin-button {
 	width: 100%;
 	text-align: center;
 	font: normal 18px sans-serif;
+  display: inline-block;
 
 	padding: 45px;
 }
