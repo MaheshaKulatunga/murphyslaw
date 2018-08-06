@@ -30,6 +30,9 @@ function setpos(element, factor) {
 }
 
 $(document).ready(function () {
+  $('.jumbotron.section-1').css('margin-bottom','0px').css('background-position','50% 0px')
+
+
   var scatterChartData = {
     datasets: [{
       label: "Others",

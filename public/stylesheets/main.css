@@ -214,7 +214,30 @@ input::-webkit-inner-spin-button {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+.jumbotron text {
+    font-size: 26px;
+}
 
+.industries {
+  padding-top: 50px;
+}
+
+.main-image-wrapper {
+  position: relative;
+display: block;
+text-align: center;
+left: -100px;
+top: 34vh;
+}
+
+.main-image {
+  position:absolute;
+  max-width: 200px;
+}
+
+.main-text {
+  fill:white;
+}
 .navbar {
   z-index: 99;
 }
@@ -471,7 +494,7 @@ input::-webkit-inner-spin-button {
       }
 
       .index-icon {
-        width: 80px;
+        width: 140px;
 
       }
 
@@ -702,9 +725,7 @@ color: lightcyan;
     height: 50px;
   }
 
-  .jumbotron h1 {
-      font-size: 106px;
-  }
+
 
   .contact-section-2 {
     height: 30vh !important;
