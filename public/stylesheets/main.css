@@ -15,6 +15,10 @@ body, footer, head {
   font-size: 40px;
 }
 
+.jumbotron h1 {
+  font-size: 100px;
+}
+
 .jumbotron {
     padding: 0px 0;
 }
@@ -500,6 +504,7 @@ top: 34vh;
 
       .index-block-big-text {
         font-size: 42px;
+        text-align: right;
         color: rgb(47, 193, 152) !important;
 
       }
@@ -509,7 +514,7 @@ top: 34vh;
       }
 
       .index-block-text {
-        font-size: 16px;
+        font-size: 20px;
       }
 
       .index-block {
@@ -528,15 +533,15 @@ top: 34vh;
       }
 
         .index-img img {
-          height: 500px;
+
         }
 
         .index-sec4-text {
-              padding-top: 75px;
+              padding:50px 2.5% 0px 2.5%;
         }
 
         .section-4-index, .index-img, .index-img img {
-          padding-right: 0px !important;
+          padding: 0px !important;
         }
 
         .heavy { font: bold 16px sans-serif; }
