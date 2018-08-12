@@ -53,6 +53,10 @@ body, footer, head {
   overflow:hidden;
 }
 
+.section-4-company {
+    padding: 50px 10% 0px !important;
+}
+
 .form-input {
   padding-bottom:5vh;
 }
@@ -307,7 +311,7 @@ top: 34vh;
 
       .contact-section-1, .company-section-1 {
 
-        height: 70vh !important;
+        height: 100vh !important;
         margin-bottom: 0vh;
       }
 
@@ -372,10 +376,15 @@ top: 34vh;
         padding: 0px 10%;
       }
 
-      .company-section-5 font, .company-section-5 a, .company-section-5 a:hover, .arrow {
+      .company-section-5 font, .company-section-5 a, .company-section-5 a:hover {
         color: rgb(47, 193, 152);
         cursor: pointer;
         text-align: center;
+        text-decoration: none;
+      }
+
+      .arrow a {
+        color: white;
         text-decoration: none;
       }
 
@@ -399,7 +408,7 @@ top: 34vh;
       }
 
       .company-section-5 {
-        background: url("../imgs/architecture-banana-leaves-botanical-175256.jpg") no-repeat center center fixed;
+        blackground: url("../imgs/architecture-banana-leaves-botanical-175256.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -538,6 +547,9 @@ top: 34vh;
 
         .index-sec4-text {
               padding:50px 2.5% 0px 2.5%;
+        }
+        .company-sec4-text {
+          padding: 50px 15px;
         }
 
         .section-4-index, .index-img, .index-img img {

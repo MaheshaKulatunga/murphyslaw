@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+
+<div id="bg1" class="jumbotron company-section-1 text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <% include ../partials/nav.ejs %>
+  <div style="display: table; height: 100%; overflow: hidden;width:100%;">
+    <div style="display: table-cell; vertical-align: middle;width:100%;text-align:center;color:white;">
+      <text style="margin: 0px;font-size: 100px;">
+        GENE FARMS
+      </text>
+      <h4><span> Smart Farms is an initiative spawned by the necessity for change.</span></h4>
+      <h4> To provide Sri Lanka with a new perspective on agricultural sustainability.</h4>
+      <div class="arrow bounce hidden-xs">
+        <a id="findoutmorelink" href="#map">
+          <font>See more</font><br/>
+          <font class="glyphicon glyphicon-menu-down"></font>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bg3" style="padding: 50px;height:100vh" class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="company-sec4-text col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <h2> <span>Hydro is a thing that is what we do I dont have auto text generator so I'm trying this out</span></h1>
+    <h4> <span>More text </span> </h4>
+    <h2> Coming soon ...</h2>
+  </div>
+
+</div>
+
+<script>
+(function() {
+  var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/";
+  if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })();
+
+
+  $("#findoutmorelink").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#bg3").offset().top
+    }, 1000);
+  });
+
+</script>
+
+</body>
+
+<footer class="footer-basic-centered col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <% include ../partials/footer.ejs %>
+</footer>
+</html>

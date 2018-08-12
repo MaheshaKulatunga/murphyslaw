@@ -23,7 +23,12 @@ express()
   .set('view engine', 'ejs')
   //Routes
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/company', (req, res) => res.render('pages/company'))
+  .get('/agro', (req, res) => res.render('pages/agro'))
+  .get('/fish', (req, res) => res.render('pages/fish'))
+  .get('/hydro', (req, res) => res.render('pages/hydro'))
+  .get('/energy', (req, res) => res.render('pages/energy'))
+  .get('/data', (req, res) => res.render('pages/data'))
+  .get('/gene', (req, res) => res.render('pages/gene'))
   .get('/contact', (req, res) => res.render('pages/contact'))
   .post('/send',(req,res) => sendEmail(req, res))
 

@@ -7,6 +7,8 @@ function parallax() {
   setpos("#bg6");
   setpos("#bg7");
 
+
+
 }
 
 

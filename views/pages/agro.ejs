@@ -9,22 +9,33 @@
 
 <div id="bg1" class="jumbotron company-section-1 text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <% include ../partials/nav.ejs %>
-  <div class="main-banner col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <h1>FARMING THE FUTURE</h1>
+  <div style="display: table; height: 100%; overflow: hidden;width:100%;">
+    <div style="display: table-cell; vertical-align: middle;width:100%;text-align:center;color:white;">
+      <text style="margin: 0px;font-size: 100px;">
+        AGRICULTURE
+      </text>
+      <h4><span> Smart Farms is an initiative spawned by the necessity for change.</span></h4>
+      <h4> To provide Sri Lanka with a new perspective on agricultural sustainability.</h4>
+      <div class="arrow bounce hidden-xs">
+        <a id="findoutmorelink" href="#map">
+          <font>See more</font><br/>
+          <font class="glyphicon glyphicon-menu-down"></font>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
-
+<!--
 <div id="bg2" class="company-section-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="company-section-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <div class="text-section-company col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h1><span> Smart Farms is an initiative spawned by the necessity for change.</span></h1>
-        <h4> To provide Sri Lanka with a new perspective on agricultural sustainability.</h4>
+
       </div>
   </div>
 
 </div>
-
+-->
 <div id="bg3" class="company-section-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <h1><span> The nation's needs for affordable food commodities have not been met.</span></h1>
 </div>
@@ -33,35 +44,28 @@
     <h1><span>This directly correlates to the country's undernourished and starving percentile.</span></h1>
 </div>
 
-<div id="bg5" class="company-section-5 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <div class="text-section-company-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <h1> <span>As of 2018, Sri Lanka is ranked 84th, with a GHI score of 25.5 on the Global Hunger Index.</span></h1>
+<div style="padding: 50px;" class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="company-sec4-text col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <h2> <span>As of 2018, Sri Lanka is ranked 84th, with a GHI score of 25.5 on the Global Hunger Index.</span></h1>
     <h4> <span>Sri Lanka’s has the lowest reductions in hunger since 2000, only second to the Central African Republic. </span> </h4>
-    <div class="arrow bounce hidden-xs">
-      <a id="map-link" href="#map">
-        <font>See data</font><br/>
-        <font class="glyphicon glyphicon-menu-down"></font>
-      </a>
-    </div>
+  </div>
+  <div class="index-img col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <!--<canvas id="canvas"></canvas>-->
+    <img class="img-responsive col-lg-12 col-md-12 col-sm-12 col-xs-12" src="../imgs/hunger-graph.png">
   </div>
 
 </div>
-​
+
 <div id="bg2" class="company-section-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="text-section-company col-lg-8 col-md-8 col-sm-8 col-xs-12">
     <h1><span> Smart Farms is here to lead the development of
       infrastructure purposefully provisioned to address these exigencies. </span></h1>
-    <h4> We aim to provide Sri Lanka with the tools and expertise to achieve a harmonious symbiosis between ecology and horticulture,
-      utilizing the seamless integration of technology to advance Sri Lanka’s growing need for sustainability conscious agricultural practices.</h4>
   </div>
   <div class="tree-section-company col-lg-4 col-md-4 col-sm-4 col-xs-6 hidden-xs">
     <!--<h1><span class="glyphicon glyphicon-grain leaf-icon" aria-hidden="true"></span></h1>-->
     <img class="col-lg-12 col-md-12 col-sm-12 col-xs-12" src="../imgs/bulb-final-.png" >
   </div>
 
-</div>
-<div style="width:50% !important" >
-  <canvas id="canvas"></canvas>
 </div>
 <!--<div class="img-container-2 col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="text-section-company col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -107,6 +111,12 @@
   var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/";
   if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })();
 
+
+  $("#findoutmorelink").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#bg3").offset().top
+    }, 1000);
+  });
 /*
   $('.map-button').click(function() {
     console.log('ok')
@@ -133,11 +143,7 @@
 
   });
 */
-  $("#map-link").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#map").offset().top
-    }, 1000);
-  });
+
 
 
 
