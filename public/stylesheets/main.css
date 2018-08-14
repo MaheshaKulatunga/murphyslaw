@@ -40,7 +40,7 @@ body, footer, head {
 }
 
 .form-left {
-  background: url("../imgs/agriculture-field-forest-1686.jpg") no-repeat center center;
+  background: url("../imgs/contact-image-1.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -301,7 +301,7 @@ top: 34vh;
       max-width: 100%; }
 
       .section-1 {
-        background: url("../imgs/stock-photo-green-vegetables-and-dark-leafy-food-background-as-a-healthy-eating-concept-of-fresh-garden-produce-154023704.jpg") no-repeat center center fixed;
+        background: url("../imgs/home-image-1.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -309,14 +309,19 @@ top: 34vh;
         height: 100vh !important;
       }
 
-      .contact-section-1, .company-section-1 {
+      .company-section-1 {
 
         height: 100vh !important;
         margin-bottom: 0vh;
       }
 
       .contact-section-1 {
-        background: url("../imgs/bruno-scramgnon-bulb-idea-315658.jpg") no-repeat center center fixed;
+        height: 70vh !important;
+        margin-bottom: 0vh;
+      }
+
+      .contact-section-1 {
+        background: url("../imgs/bruno-scramgnon-bulb-idea-315658.jpg") no-repeat fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -324,7 +329,43 @@ top: 34vh;
       }
 
       .company-section-1 {
-        background: url("../imgs/agriculture-ball-shaped-cooking-5808.jpg") no-repeat center center fixed;
+        background: url("../imgs/agriculture-ball-shaped-cooking-5808.jpg") no-repeat fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      .company-section-1 {
+
+      }
+
+      .fish-section-1 {
+        background: url("../imgs/fish-image-1.jpg") no-repeat fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .energy-section-1 {
+        background: url("../imgs/energy-image-1.jpg") no-repeat fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .gene-section-1 {
+        background: url("../imgs/dna.jpg") no-repeat fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+
+      .hydro-section-1 {
+        background: url("../imgs/hydro-image-1.jpg") no-repeat fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -389,7 +430,7 @@ top: 34vh;
       }
 
       .company-section-4 {
-        background: url("../imgs/animal-brown-canine-304699.jpg") no-repeat center center fixed;
+        background: url("../imgs/agro-image-3.jpg") no-repeat fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -399,7 +440,7 @@ top: 34vh;
       }
 
       .company-section-3 {
-        background: url("../imgs/black-and-white-close-up-dark-620251.jpg") no-repeat center center fixed;
+        background: url("../imgs/agro-image-2.jpg") no-repeat fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -408,7 +449,7 @@ top: 34vh;
       }
 
       .company-section-5 {
-        blackground: url("../imgs/architecture-banana-leaves-botanical-175256.jpg") no-repeat center center fixed;
+        blackground: url("../imgs/architecture-banana-leaves-botanical-175256.jpg") no-repeat  fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -650,10 +691,10 @@ color: lightcyan;
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-15px);
+    transform: translateY(-7.5px);
   }
   60% {
-    transform: translateY(-5px);
+    transform: translateY(-1.25px);
   }
 }
 
