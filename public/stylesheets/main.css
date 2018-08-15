@@ -372,6 +372,14 @@ top: 34vh;
         background-size: cover;
       }
 
+      .data-section-1 {
+        background: url("../imgs/data.jpg") no-repeat fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
       .contact-details h4 {
         font-weight: bold;
       }
